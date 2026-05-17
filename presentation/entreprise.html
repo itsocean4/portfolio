@@ -3,52 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entreprise - IMC par Randstad | Ibrahim ALEXANDRE</title>
-  <meta name="description" content="Présentation de l'entreprise IMC par Randstad où Ibrahim effectue son alternance.">
+  <title>Entreprise - Ministère des Armées | Ibrahim ALEXANDRE</title>
+  <meta name="description" content="Présentation du Ministère des Armées, entreprise d'accueil d'Ibrahim ALEXANDRE dans le cadre de son alternance BTS SIO SISR.">
   <link rel="stylesheet" href="../css/style.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    .lucide {
+      width: 28px;
+      height: 28px;
+      stroke: var(--accent-color, #4fc3f7);
+      stroke-width: 1.75;
+      margin-bottom: 0.5rem;
+    }
+    .mission-icon .lucide {
+      width: 32px;
+      height: 32px;
+    }
+    .alert-icon .lucide {
+      width: 20px;
+      height: 20px;
+      stroke: #ffc107;
+      vertical-align: middle;
+      margin-right: 0.4rem;
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
   <div class="bg-glow"></div>
   <header id="navbar-container"></header>
 
   <main>
+
+    <!-- HERO -->
     <section class="page-header animate-on-scroll">
       <div class="container">
         <h1>Mon <span class="text-gradient">Entreprise</span> d'Accueil</h1>
-        <p class="subtitle">Présentation d'IMC par Randstad</p>
+        <p class="subtitle">Ministère des Armées — Commissariat au numérique de défense</p>
       </div>
     </section>
 
+    <!-- CONTENU PRINCIPAL -->
     <section class="content-section animate-on-scroll delay-1">
       <div class="container">
         <div class="content-block">
-          <h2>IMC par Randstad</h2>
-          <p>J'effectue actuellement mon alternance au sein de <strong>IMC par Randstad</strong>. [PLACEHOLDER : Insérer ici une brève description de l'entreprise, son secteur d'activité, son envergure, et ses valeurs.]</p>
-          
-          <h3 style="margin-top: 2rem;">Mon rôle et mes responsabilités</h3>
-          <p>Au sein du service informatique, j'occupe le poste d'<strong>Administrateur Systèmes et Réseaux Junior</strong> (ou Technicien Support selon l'intitulé exact).</p>
-          <ul style="margin-left: 1.5rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8;">
-            <li>[PLACEHOLDER : Mission principale 1 - ex: Maintien en condition opérationnelle de l'infrastructure]</li>
-            <li>[PLACEHOLDER : Mission principale 2 - ex: Gestion des droits d'accès via Active Directory]</li>
-            <li>[PLACEHOLDER : Mission principale 3 - ex: Déploiement de postes et support de niveau 1/2]</li>
-            <li>[PLACEHOLDER : Mission principale 4 - ex: Participation à la migration vers Office 365]</li>
-          </ul>
 
-          <h3 style="margin-top: 2rem;">L'environnement technique</h3>
-          <p>L'infrastructure d'IMC s'appuie sur des technologies robustes :</p>
+          <h2>Le Ministère des Armées</h2>
+          <p>
+            Le <strong>Ministère des Armées</strong> est l'un des ministères régaliens de la
+            République française. Il est chargé de la défense et de la sécurité du territoire
+            national, de la gestion des forces armées (Armée de Terre, Marine nationale, Armée
+            de l'Air et de l'Espace) ainsi que du soutien aux opérations militaires en France
+            et à l'étranger.
+          </p>
+          <p>
+            Dans ce contexte exigeant, les <strong>Systèmes d'Information et de Communication
+            (SIC)</strong> jouent un rôle stratégique fondamental : haute disponibilité des
+            réseaux, cloisonnement des données, sécurité renforcée et interconnexion de sites
+            multiples sont au cœur des enjeux techniques quotidiens.
+          </p>
+
+          <!-- FICHE IDENTITÉ -->
+          <div style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+          ">
+            <div style="
+              background: var(--card-bg, rgba(255,255,255,0.05));
+              border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+              border-radius: 12px;
+              padding: 1.25rem;
+            ">
+              <i data-lucide="landmark"></i>
+              <p style="font-weight: 600; margin-bottom: 0.25rem;">Structure</p>
+              <p style="color: var(--text-secondary);">Ministère des Armées</p>
+            </div>
+            <div style="
+              background: var(--card-bg, rgba(255,255,255,0.05));
+              border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+              border-radius: 12px;
+              padding: 1.25rem;
+            ">
+              <i data-lucide="tag"></i>
+              <p style="font-weight: 600; margin-bottom: 0.25rem;">Secteur</p>
+              <p style="color: var(--text-secondary);">Service public — Défense nationale</p>
+            </div>
+            <div style="
+              background: var(--card-bg, rgba(255,255,255,0.05));
+              border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+              border-radius: 12px;
+              padding: 1.25rem;
+            ">
+              <i data-lucide="briefcase"></i>
+              <p style="font-weight: 600; margin-bottom: 0.25rem;">Mon poste</p>
+              <p style="color: var(--text-secondary);">Chargé d'affaires SIC</p>
+            </div>
+            <div style="
+              background: var(--card-bg, rgba(255,255,255,0.05));
+              border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+              border-radius: 12px;
+              padding: 1.25rem;
+            ">
+              <i data-lucide="calendar-days"></i>
+              <p style="font-weight: 600; margin-bottom: 0.25rem;">Rythme</p>
+              <p style="color: var(--text-secondary);">3 jours entreprise · 2 jours CFA</p>
+            </div>
+          </div>
+
+          <!-- MISSIONS -->
+          <h3 style="margin-top: 2.5rem;">Mon rôle & mes missions</h3>
+          <p>
+            En tant que <strong>Chargé d'affaires SIC</strong>, j'interviens à la fois comme
+            architecte réseau et chef de projet sur des sujets techniques à forts enjeux
+            opérationnels. Mes missions s'articulent autour de trois axes :
+          </p>
+
+          <div style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin: 1.5rem 0;
+          ">
+            <div class="mission-icon" style="
+              background: var(--card-bg, rgba(255,255,255,0.05));
+              border-left: 3px solid var(--accent-color, #4fc3f7);
+              border-radius: 8px;
+              padding: 1.25rem;
+            ">
+              <i data-lucide="network"></i>
+              <p style="font-weight: 600; margin-bottom: 0.5rem;">Architecture réseau</p>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                Participation à la conception et à la structuration d'infrastructures réseau
+                dans un environnement à forts enjeux de performance et de sécurité.
+              </p>
+            </div>
+            <div class="mission-icon" style="
+              background: var(--card-bg, rgba(255,255,255,0.05));
+              border-left: 3px solid var(--accent-color, #4fc3f7);
+              border-radius: 8px;
+              padding: 1.25rem;
+            ">
+              <i data-lucide="clipboard-list"></i>
+              <p style="font-weight: 600; margin-bottom: 0.5rem;">Gestion de projet</p>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                Coordination et suivi de projets techniques en lien avec les équipes
+                opérationnelles et les parties prenantes internes.
+              </p>
+            </div>
+            <div class="mission-icon" style="
+              background: var(--card-bg, rgba(255,255,255,0.05));
+              border-left: 3px solid var(--accent-color, #4fc3f7);
+              border-radius: 8px;
+              padding: 1.25rem;
+            ">
+              <i data-lucide="shield-check"></i>
+              <p style="font-weight: 600; margin-bottom: 0.5rem;">Environnement SIC</p>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                Intervention sur des systèmes d'information et de communication soumis à
+                des exigences strictes de fiabilité, de cloisonnement et de confidentialité.
+              </p>
+            </div>
+          </div>
+
+          <!-- ENVIRONNEMENT TECHNIQUE -->
+          <h3 style="margin-top: 2.5rem;">L'environnement technique</h3>
+          <p>Les infrastructures sur lesquelles j'interviens mobilisent notamment :</p>
           <div class="skills-tags">
+            <span class="skill-tag">Cisco (Routing / Switching)</span>
+            <span class="skill-tag">VLAN</span>
+            <span class="skill-tag">VPN</span>
+            <span class="skill-tag">Firewall</span>
             <span class="skill-tag">Windows Server</span>
             <span class="skill-tag">Active Directory</span>
-            <span class="skill-tag">Office 365</span>
+            <span class="skill-tag">Linux</span>
             <span class="skill-tag">VMware</span>
-            <span class="skill-tag">[PLACEHOLDER_TECH]</span>
+            <span class="skill-tag">Supervision réseau</span>
           </div>
+
+          <!-- ENCADRÉ CONFIDENTIALITÉ -->
+          <div style="
+            margin-top: 2.5rem;
+            background: rgba(255, 193, 7, 0.08);
+            border: 1px solid rgba(255, 193, 7, 0.35);
+            border-radius: 10px;
+            padding: 1.25rem 1.5rem;
+          ">
+            <p style="font-weight: 700; margin-bottom: 0.5rem;">
+              <span class="alert-icon"><i data-lucide="alert-triangle"></i></span>
+              Note sur la confidentialité
+            </p>
+            <p style="color: var(--text-secondary); font-size: 0.92rem;">
+              Dans le cadre de mon alternance au Ministère des Armées, certaines informations
+              relatives aux infrastructures, aux architectures réseau et aux projets menés sont
+              soumises à des règles strictes de confidentialité. Les éléments présentés dans ce
+              portfolio respectent ces contraintes et ne divulguent aucune donnée sensible
+              ou classifiée.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
   <footer id="footer-container"></footer>
   <script src="../js/layout.js"></script>
+  <!-- Initialisation Lucide Icons -->
+  <script>lucide.createIcons();</script>
 </body>
 </html>
