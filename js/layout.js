@@ -25,8 +25,8 @@ const navbarHTML = `
         <li class="dropdown">
           <a href="#" class="nav-link">Présentation <span style="font-size: 0.8em">▼</span></a>
           <div class="dropdown-menu">
-            <a href="/presentation/apprenti.html">Parcours & Formation</a>
-            <a href="/presentation/entreprise.html">Entreprise IMC</a>
+            <a href="/presentation/apprenti.html">Apprenti</a>
+            <a href="/presentation/entreprise.html">Entreprise</a>
           </div>
         </li>
 
@@ -43,8 +43,8 @@ const navbarHTML = `
         <li class="dropdown">
           <a href="#" class="nav-link">Épreuve E6 <span style="font-size: 0.8em">▼</span></a>
           <div class="dropdown-menu">
-            <a href="/e6/situation.html">Contexte</a>
-            <a href="/e6/production.html">Livrables</a>
+            <a href="/e6/situation.html">Situation</a>
+            <a href="/e6/production.html">Production</a>
           </div>
         </li>
 
