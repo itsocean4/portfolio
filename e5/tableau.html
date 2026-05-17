@@ -4,77 +4,292 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tableau de Synthèse E5 | Ibrahim ALEXANDRE</title>
-  <meta name="description" content="Tableau de synthèse de l'épreuve E5 du BTS SIO SISR.">
+  <meta name="description" content="Tableau de synthèse des missions réalisées par Ibrahim ALEXANDRE dans le cadre de l'épreuve E5 du BTS SIO SISR.">
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    .synth-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    .synth-table thead tr {
+      background: var(--accent-color, #4fc3f7);
+      color: #fff;
+    }
+    .synth-table thead th {
+      padding: 0.9rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .synth-table tbody tr {
+      border-bottom: 1px solid var(--border-color, rgba(255,255,255,0.08));
+      transition: background 0.2s;
+    }
+    .synth-table tbody tr:hover {
+      background: var(--card-bg, rgba(255,255,255,0.04));
+    }
+    .synth-table td {
+      padding: 0.9rem 1rem;
+      color: var(--text-secondary);
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    .synth-table td:first-child {
+      text-align: center;
+      font-weight: 700;
+      color: var(--accent-color, #4fc3f7);
+      width: 40px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge-entreprise {
+      background: rgba(79, 195, 247, 0.15);
+      color: #4fc3f7;
+      border: 1px solid rgba(79, 195, 247, 0.3);
+    }
+    .badge-formation {
+      background: rgba(129, 199, 132, 0.15);
+      color: #81c784;
+      border: 1px solid rgba(129, 199, 132, 0.3);
+    }
+    .competence-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .competence-list li::before {
+      content: "→ ";
+      color: var(--accent-color, #4fc3f7);
+      font-weight: 700;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.25rem;
+    }
+    .tag {
+      background: var(--card-bg, rgba(255,255,255,0.06));
+      border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+      border-radius: 6px;
+      padding: 0.15rem 0.5rem;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+    }
+    .legend {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .lucide {
+      width: 18px;
+      height: 18px;
+      stroke: var(--accent-color, #4fc3f7);
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
   <div class="bg-glow"></div>
   <header id="navbar-container"></header>
 
   <main>
+
+    <!-- HERO -->
     <section class="page-header animate-on-scroll">
       <div class="container">
-        <h1>Tableau de <span class="text-gradient">Synthèse E5</span></h1>
-        <p class="subtitle">Récapitulatif des compétences mises en œuvre lors de mon parcours</p>
+        <h1>Tableau de <span class="text-gradient">Synthèse</span></h1>
+        <p class="subtitle">Récapitulatif des missions réalisées en entreprise et en formation — Épreuve E5</p>
       </div>
     </section>
 
+    <!-- TABLEAU -->
     <section class="content-section animate-on-scroll delay-1">
       <div class="container">
-        <div class="content-block table-responsive">
-          <p style="margin-bottom: 2rem;">Ce tableau croise les compétences du référentiel BTS SIO SISR avec les missions réalisées en entreprise et en centre de formation.</p>
-          
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Compétences (Référentiel SISR)</th>
-                <th>Mission en Entreprise (IMC)</th>
-                <th>Mission en Formation (CFA)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Gérer le patrimoine informatique</strong></td>
-                <td>[PLACEHOLDER : Gestion de parc via GLPI]</td>
-                <td>Mise en place d'un serveur OCS Inventory</td>
-              </tr>
-              <tr>
-                <td><strong>Répondre aux incidents et demandes d'assistance</strong></td>
-                <td>[PLACEHOLDER : Support N1/N2 aux collaborateurs]</td>
-                <td>Création d'un système de ticketing interne</td>
-              </tr>
-              <tr>
-                <td><strong>Développer la présence en ligne de l'organisation</strong></td>
-                <td>[PLACEHOLDER : Gestion de l'intranet / DNS externe]</td>
-                <td>[PLACEHOLDER]</td>
-              </tr>
-              <tr>
-                <td><strong>Travailler en mode projet</strong></td>
-                <td>[PLACEHOLDER : Projet de migration vers Microsoft 365]</td>
-                <td>Déploiement d'une architecture réseau complexe (Cisco)</td>
-              </tr>
-              <tr>
-                <td><strong>Mettre à disposition des utilisateurs un service informatique</strong></td>
-                <td>[PLACEHOLDER : Déploiement de nouveaux postes (MDT)]</td>
-                <td>Mise en place d'un serveur de fichiers (Samba/Windows)</td>
-              </tr>
-              <tr>
-                <td><strong>Organiser son développement professionnel</strong></td>
-                <td>Veille technologique active</td>
-                <td>Préparation de certifications (Cisco, Microsoft)</td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <div style="margin-top: 2rem; text-align: center;">
-            <a href="#" class="btn btn-primary">Télécharger le tableau officiel (PDF)</a>
+        <div class="content-block">
+
+          <p>
+            Ce tableau recense l'ensemble des missions réalisées dans le cadre de mon
+            alternance au <strong>Ministère des Armées</strong> et de ma formation au
+            <strong>CFA IMC par Randstad</strong>. Chaque mission est mise en relation
+            avec les compétences du référentiel BTS SIO option SISR.
+          </p>
+
+          <div class="table-wrapper">
+            <table class="synth-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Intitulé de la mission</th>
+                  <th>Contexte</th>
+                  <th>Compétences mobilisées</th>
+                  <th>Outils / Technologies</th>
+                  <th>Livrables</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <!-- MISSION 1 -->
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <strong>Conception d'un schéma d'architecture réseau</strong>
+                  </td>
+                  <td><span class="badge badge-entreprise">Entreprise</span></td>
+                  <td>
+                    <ul class="competence-list">
+                      <li>Concevoir une architecture réseau</li>
+                      <li>Documenter l'infrastructure</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <div class="tags">
+                      <span class="tag">Microsoft Visio</span>
+                    </div>
+                  </td>
+                  <td>Schéma d'architecture réseau</td>
+                </tr>
+
+                <!-- MISSION 2 -->
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <strong>Gestion du déploiement d'une infrastructure réseau</strong>
+                  </td>
+                  <td><span class="badge badge-entreprise">Entreprise</span></td>
+                  <td>
+                    <ul class="competence-list">
+                      <li>Déployer une infrastructure réseau</li>
+                      <li>Piloter un projet SI</li>
+                      <li>Installer et configurer des équipements actifs</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <div class="tags">
+                      <span class="tag">Baies de brassage</span>
+                      <span class="tag">Switches</span>
+                      <span class="tag">Routeurs</span>
+                      <span class="tag">Câblage structuré</span>
+                    </div>
+                  </td>
+                  <td>Rapport de déploiement · Plan de câblage</td>
+                </tr>
+
+                <!-- MISSION 3 -->
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <strong>Virtualisation et administration d'un serveur Windows Server 2022</strong>
+                  </td>
+                  <td><span class="badge badge-formation">Formation</span></td>
+                  <td>
+                    <ul class="competence-list">
+                      <li>Installer un système d'exploitation serveur</li>
+                      <li>Déployer un service d'annuaire (Active Directory)</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <div class="tags">
+                      <span class="tag">Windows Server 2022</span>
+                      <span class="tag">Active Directory</span>
+                      <span class="tag">VMware / VirtualBox</span>
+                    </div>
+                  </td>
+                  <td>Compte-rendu de TP · VM configurée</td>
+                </tr>
+
+                <!-- MISSION 4 -->
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <strong>Prise en main d'un environnement Linux Debian</strong>
+                  </td>
+                  <td><span class="badge badge-formation">Formation</span></td>
+                  <td>
+                    <ul class="competence-list">
+                      <li>Utiliser les commandes de base Linux</li>
+                      <li>Tester la connectivité réseau</li>
+                      <li>Initiation au scripting Bash</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <div class="tags">
+                      <span class="tag">Debian</span>
+                      <span class="tag">Bash</span>
+                      <span class="tag">Terminal</span>
+                    </div>
+                  </td>
+                  <td>Scripts Bash · Compte-rendu de TP</td>
+                </tr>
+
+                <!-- MISSION 5 -->
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <strong>Découverte et configuration d'un hyperviseur Proxmox</strong>
+                  </td>
+                  <td><span class="badge badge-formation">Formation</span></td>
+                  <td>
+                    <ul class="competence-list">
+                      <li>Installer et configurer un hyperviseur</li>
+                      <li>Gérer des environnements virtualisés</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <div class="tags">
+                      <span class="tag">Proxmox VE</span>
+                    </div>
+                  </td>
+                  <td>Compte-rendu de TP · VM créées</td>
+                </tr>
+
+              </tbody>
+            </table>
           </div>
+
+          <!-- LÉGENDE -->
+          <div class="legend">
+            <div class="legend-item">
+              <i data-lucide="building-2"></i>
+              <span><strong style="color:#4fc3f7;">Entreprise</strong> — Ministère des Armées</span>
+            </div>
+            <div class="legend-item">
+              <i data-lucide="graduation-cap"></i>
+              <span><strong style="color:#81c784;">Formation</strong> — CFA IMC par Randstad</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
   <footer id="footer-container"></footer>
   <script src="../js/layout.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
