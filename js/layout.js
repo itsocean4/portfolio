@@ -25,30 +25,30 @@ const navbarHTML = `
         <li class="dropdown">
           <a href="#" class="nav-link">Présentation <span style="font-size: 0.8em">▼</span></a>
           <div class="dropdown-menu">
-            <a href="/presentation/apprenti.html">Parcours & Formation</a>
-            <a href="/presentation/entreprise.html">Entreprise IMC</a>
+            <a href="presentation/apprenti.html">Parcours & Formation</a>
+            <a href="presentation/entreprise.html">Entreprise IMC</a>
           </div>
         </li>
 
         <li class="dropdown">
           <a href="#" class="nav-link">Épreuve E5 <span style="font-size: 0.8em">▼</span></a>
           <div class="dropdown-menu">
-            <a href="/e5/tableau.html">Tableau de synthèse</a>
-            <a href="/e5/formation.html">Missions en Formation</a>
-            <a href="/e5/entreprise.html">Missions en Entreprise</a>
-            <a href="/e5/certifications.html">Certifications</a>
+            <a href="e5/tableau.html">Tableau de synthèse</a>
+            <a href="e5/formation.html">Missions en Formation</a>
+            <a href="e5/entreprise.html">Missions en Entreprise</a>
+            <a href="e5/certifications.html">Certifications</a>
           </div>
         </li>
 
         <li class="dropdown">
           <a href="#" class="nav-link">Épreuve E6 <span style="font-size: 0.8em">▼</span></a>
           <div class="dropdown-menu">
-            <a href="/e6/situation.html">Contexte</a>
-            <a href="/e6/production.html">Livrables</a>
+            <a href="e6/situation.html">Contexte</a>
+            <a href="e6/production.html">Livrables</a>
           </div>
         </li>
 
-        <li><a href="/veille.html" class="nav-link">Veille Technologique</a></li>
+        <li><a href="veille.html" class="nav-link">Veille Technologique</a></li>
       </ul>
     </div>
   </nav>
